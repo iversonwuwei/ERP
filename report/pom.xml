@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ERP</artifactId>
+        <groupId>com.walden</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>erp-report</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.ow2.orchestra.eclipse.birt</groupId>
+            <artifactId>org.ow2.orchestra.eclipse.birt.core</artifactId>
+            <version>${birt.report}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.orchestra.eclipse.birt</groupId>
+            <artifactId>org.ow2.orchestra.eclipse.birt.chart.engine</artifactId>
+            <version>${birt.report}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.orchestra.eclipse.birt</groupId>
+            <artifactId>org.ow2.orchestra.eclipse.birt.data</artifactId>
+            <version>${birt.report}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.orchestra.eclipse.birt</groupId>
+            <artifactId>org.ow2.orchestra.eclipse.birt.report.engine</artifactId>
+            <version>${birt.report}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.orchestra.eclipse.birt</groupId>
+            <artifactId>org.ow2.orchestra.eclipse.birt.report.model</artifactId>
+            <version>${birt.report}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>report</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.walden.</mainClass>
+                                </transformer>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/spring.handlers</resource>
+                                </transformer>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/spring.schemas</resource>
+                                </transformer>
+                            </transformers>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <!-- optional -->
+                            <shadedClassifierName>executable</shadedClassifierName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

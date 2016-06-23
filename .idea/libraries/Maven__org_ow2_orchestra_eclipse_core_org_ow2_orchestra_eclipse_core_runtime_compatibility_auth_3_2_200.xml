@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ow2.orchestra.eclipse.core:org.ow2.orchestra.eclipse.core.runtime.compatibility.auth:3.2.200">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/orchestra/eclipse/core/org.ow2.orchestra.eclipse.core.runtime.compatibility.auth/3.2.200/org.ow2.orchestra.eclipse.core.runtime.compatibility.auth-3.2.200.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/orchestra/eclipse/core/org.ow2.orchestra.eclipse.core.runtime.compatibility.auth/3.2.200/org.ow2.orchestra.eclipse.core.runtime.compatibility.auth-3.2.200-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/orchestra/eclipse/core/org.ow2.orchestra.eclipse.core.runtime.compatibility.auth/3.2.200/org.ow2.orchestra.eclipse.core.runtime.compatibility.auth-3.2.200-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

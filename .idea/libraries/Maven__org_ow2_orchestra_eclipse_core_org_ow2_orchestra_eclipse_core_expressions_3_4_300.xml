@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ow2.orchestra.eclipse.core:org.ow2.orchestra.eclipse.core.expressions:3.4.300">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/orchestra/eclipse/core/org.ow2.orchestra.eclipse.core.expressions/3.4.300/org.ow2.orchestra.eclipse.core.expressions-3.4.300.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/orchestra/eclipse/core/org.ow2.orchestra.eclipse.core.expressions/3.4.300/org.ow2.orchestra.eclipse.core.expressions-3.4.300-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/orchestra/eclipse/core/org.ow2.orchestra.eclipse.core.expressions/3.4.300/org.ow2.orchestra.eclipse.core.expressions-3.4.300-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
